@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #072434;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.heads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_text {
+  font-family: "Winky Rough", system-ui;
+  font-size: 40px;
+  color: #e3eef4;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #061d2a;
+  margin-bottom: 20px;
+}
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+  background-color: transparent !important;
+}
+.links {
+  text-decoration: none;
+  color: #e3eef4;
+  font-family: "Varela Round", system-ui;
+  font-size: 25px;
+  background-color: transparent !important;
+}
+.chess-info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.chess-pic {
+  width: 400px;
+  padding: 10px;
+  align-self: center;
+  transition: 1s ease-in-out all;
+  border-radius: 50px;
+}
+.chess-pic:hover {
+  transform: rotate(360deg);
+}
+.paragraph {
+  font-family: "Nova Round";
+  font-size: 20px;
+  color: #e3eef4;
+  display: flex;
+  align-items: center;
+  width: 700px;
+  align-self: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+.magnus_img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.mag_imgs {
+  width: 300px;
+  border-radius: 100%;
+  transition: 0.3s ease-in-out all;
+}
+
+.mag_imgs:hover {
+  transform: scale(1.5);
+}
+::-webkit-scrollbar {
+  border-radius: 11px;
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 11px;
+  background: #101820;
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d5e9c3;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.headings {
+  color: #87d5ff;
+  font-family: "Winky Rough";
+  font-size: 30px;
+  padding: 10px;
+}
+.why {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: none;
+}
