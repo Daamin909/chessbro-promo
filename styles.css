@@ -47,7 +47,7 @@ body {
   align-items: center;
   width: 30vw;
 }
-.fa{
+.fa {
   margin-right: 10px;
 }
 .links {
@@ -87,6 +87,18 @@ body {
 }
 .stockfish-img:hover {
   transform: translateX(-12px) scale(1.1);
+}
+.imagenotfound {
+  height: 200px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .paragraph {
   font-family: "Nova Round";
