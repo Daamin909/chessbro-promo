@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/logo.png" type="image/png" />
     <title>ChessBro - free game review!</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -19,7 +15,7 @@
       </div>
       <div class="right heads">
         <a class="links" href="/"><i class="fa fa-home"></i> Home </a>
-        <a style="color: rgb(223, 255, 128)" class="links" href="/about.html"
+        <a class="links" style="color: rgb(223, 255, 128)" href="/about.html"
           ><i class="fa fa-info"></i> About
         </a>
         <a class="links" href="/contact.html">
@@ -27,5 +23,59 @@
         >
       </div>
     </nav>
+    <div class="why">
+      <h2 class="headings">im a 🤓, how does this work?</h2>
+      <p class="paragraph">
+        okay so for the nerds, here is how this works briefly. firstly, the
+        website fetches the game using the users chess.com username or the user
+        enters the PGN (portable game notation). The PGN is validated and then
+        converted to a list of FENs (forsyth–edwards notation) that basically
+        represent the curren position of the board, and then this is where
+        Stockfish comes in.
+      </p>
+      <h2 class="headings">what is stockfish?</h2>
+      <p class="imgp paragraph">
+        <img
+          src="assets/stockfish.png"
+          class="stockfish-img"
+          alt="stockfish logo"
+        />
+        stockfish is an open-source chess engine. it analyses the current
+        position and tells you the best move(s) and the game eval. Eval is a
+        number based system used to describe who's better in the current
+        position; ie "+1" means White is better by 1, "-1" means Black is better
+        by 1 and so on. there is also stuff like "M6" or "M-6" which means
+        checkmate can be forced by white and black respectively in 6 moves.
+      </p>
+      <h2 class="headings">cool, so what do you do with this info?</h2>
+      <p class="paragraph">
+        here is where my algorithm comes in, chessbro compares the change in
+        eval to classify the moves as excellent/best/good/blunder etc. then we
+        use a list of openings, to determine the game's opening. I use a LOT of
+        libraries in this process that do some heavy-lifting for me, so a HUGE
+        thank you to all open-source contributors/maintainers that work on those
+        libs.
+      </p>
+      <h3
+        class="paragraph"
+        style="color: #87d5ff; font-size: 22px; width: max-content"
+      >
+        HUGE thank you to maintainers/creators/contributors of Stockfish,
+        stockfish.js, chess.js, chessboard.js and other countless libraries 🫡
+      </h3>
+    </div>
+    <footer>
+      <a class="footer-link" href="https://github.com/daamin909/chessbro"
+        ><i class="fa fa-github ghlogo"></i
+      ></a>
+      <p class="footer-copyright">© Daamin Ashai 2025</p>
+      <a class="footer-link" href="https://chessbro.org"
+        ><i class="fa fa-globe ghlogo"></i
+      ></a>
+    </footer>
   </body>
+  <script
+    src="https://kit.fontawesome.com/92251e3fac.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
