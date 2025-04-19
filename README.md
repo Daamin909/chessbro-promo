@@ -10,6 +10,7 @@ a little website to promote [chessbro](chessbro.org). Made using HTML and CSS on
 - special links (email: `mailto:`)
 - custom navbar with current page highlighter
 - keyframes-based animation on elements
+- custom scrollbar using CSS
 - fontawesome icons
 
 ## chessbro?
